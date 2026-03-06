@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Mana Aarogyam",
+    "slug": "mana-aarogyam",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D9488"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.manahealth.aarogyam",
+      "buildNumber": "1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D9488"
+      },
+      "package": "com.manahealth.aarogyam",
+      "minSdkVersion": 21,
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Mana Aarogyam to access your microphone for voice consultations."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Mana Aarogyam to access your camera for video consultations."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow Mana Aarogyam to access your contacts for emergency notifications."
+        }
+      ],
+      [
+        "expo-file-system",
+        {
+          "photosPermission": "Allow Mana Aarogyam to access your photos for patient records."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "mana-aarogyam-health"
+      }
+    }
+  }
+}
